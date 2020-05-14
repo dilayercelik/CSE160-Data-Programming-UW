@@ -6,6 +6,8 @@ To access the course's website (2018 Spring Quarter): [here](https://courses.cs.
 
 To access the homework assignments: click on the 'Homework' tab once you arrive on the website linked above or click [here](https://courses.cs.washington.edu/courses/cse160/18sp/homework/).
 
+I worked on Python 3.7
+
 
 # Information on the course
 
