@@ -35,6 +35,6 @@ To access the homework assignments: click on the 'Homework' tab once you arrive 
 - Dilay Fidan Ercelik
 
 # License
-This work is licensed under the MIT License - see [LICENSE.txt](
+This work is licensed under the MIT License - see [LICENSE.txt](https://github.com/dilayercelik/CSE160-Data-Programming-UW/blob/master/LICENSE.txt)
 
 
