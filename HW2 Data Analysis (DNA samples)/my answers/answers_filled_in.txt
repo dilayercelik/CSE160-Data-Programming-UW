@@ -1,0 +1,136 @@
+Name: Dilay Fidan Ercelik
+CSE 160
+Homework 2
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file and your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+The line of output produced by the program regarding GC-content when run on sample_1.fastq is:
+
+GC-content: 0.4302926296296296
+
+Problem 3:
+
+a. When we comment out the line "gc_count = 0" in dna_analysis.py and run the program for, say sample 1, (i.e. cmd prompt: python dna_analysis.py data/sample_1.fastq), we get the following error (in cmd prompt output): NameError: name 'gc_count' is not defined. This is expected: by deleting the initial value of gc_count = 0, we are unable to properly run the for loop in line 89 of dna_analysis.py because within that loop, we want to increment gc_count by one at each step; however, this is now impossible because the numeric variable gc_count is not defined prior to incrementing and using it in the for loop. Typically, we can't increment a variable by one if that variable does not have an initial value, be it 0 or anything else.
+
+b. When we comment out the line 'nucleotides = filename_to_string(filename)' in dna_analysis.py and run the program for, say sample 1, (i.e. cmd prompt: python dna_analysis.py data/sample_1.fastq), we get the following error: NameError: name 'nucleotides' is not defined at the beginning of the following loop: 'for base in nucleotides'. This is expected because if we don't define the variable nucleotides, then we cannot use it later on, and here not in the for loop. We cannot loop through an undefined variable.
+
+Problem 4:
+
+After adding the second for loop for computing and printing the AT-content (line 102 of dna_analysis), we run the program on the cmd prompt (python dna_analysis.py data/sample_1.fastq) and get the following output:
+
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+
+So the AT-content in sample 1 is equal to 0.5689938518518518
+
+Problem 5:
+
+After adding code (from line 106 in dna_analysis.py) and running the program on the cmd prompt on sample 1 (python dna_analysis.py data/sample_1.fastq), we get the following output in the cmd prompt:
+
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+The number of A nucleotides: 7701287
+The number of T nucleotides: 7661547
+The number of C nucleotides: 5879128
+The number of G nucleotides: 5738773
+
+The four last lines of output indicate the number of A, T, C and G nucleotides in sample 1 data (sample_1.fastq file)
+
+
+Problem 6:
+
+For sample_1.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 26980735
+The total number of nucleotides, total_count, is: 27000000
+The length of the nucleotides string variable is: 27000000
+
+For sample_2.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 26977435
+The total number of nucleotides, total_count, is: 27000000
+The length of the nucleotides string variable is: 27000000
+
+For sample_3.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 9510883
+The total number of nucleotides, total_count, is: 9510928
+The length of the nucleotides string variable is: 9510928
+
+For sample_4.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 9980961
+The total number of nucleotides, total_count, is: 9981008
+The length of the nucleotides string variable is: 9981008
+
+For sample_5.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 75
+The total number of nucleotides, total_count, is: 76
+The length of the nucleotides string variable is: 76
+
+For sample_5.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 26990
+The total number of nucleotides, total_count, is: 27000
+The length of the nucleotides string variable is: 27000
+
+
+For test-moderate-gc-1.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 39841
+The total number of nucleotides, total_count, is: 40000
+The length of the nucleotides string variable is: 40000
+
+For test-moderate-gc-1.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 39811
+The total number of nucleotides, total_count, is: 40000
+The length of the nucleotides string variable is: 40000
+
+For test-high-gc-1.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 39840
+The total number of nucleotides, total_count, is: 40000
+The length of the nucleotides string variable is: 40000
+
+For test-high-gc-2.fastq, the sum (sum_counts) of all 4 nucleotide bases (A, T, C, G) is not equal to the total number of nucleotides total_count and to the length of the nucleotides string variable. Extracted from the cmd output:
+
+The sum of all 4 counts is: 39841
+The total number of nucleotides, total_count, is: 40000
+The length of the nucleotides string variable is: 40000
+
+
+
+Problem 7:
+
+The AT-GC ratio for sample_1 (sample_1.fastq file) is (extracted from the output given in the cmd prompt after typing in python dna_analysis.py data/sample_1.fastq):
+
+The AT/GC ratio is: 1.3223416174746196
+
+
+Problem 8:
+
+Running the program on sample_1.fastq ('python dna_analysis.py data/sample_1.fastq' in the cmd prompt), we can extract this last line from the output:
+
+moderate GC content
+
+This determines the classification of the organism whose DNA sample is located in sample 1 (sample_1.fastq file): moderate GC content.
+
+
+Collaboration:
+
+None
+
