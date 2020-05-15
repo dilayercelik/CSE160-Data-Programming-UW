@@ -1,0 +1,49 @@
+This folder contains the problem statements, my answers and the empty code and text files provided in the Week 2 Homework of CSE160.
+
+This week's homework is on DNA Analysis.
+
+> Learning Objectives:
+
+gain experience writing Python code using loops, conditionals (if statements), functions and string manipulation
+become familiar with running Python programs from the command line and using command line parameters to locate data files
+write Python code to analyze DNA data sets
+
+
+> Background
+
+You will use, modify, and extend a program to compute the GC content of DNA data. 
+The GC content of DNA is the percentage of nucleotides that are either G or C.
+
+- DNA
+DNA can be thought of as a sequence of nucleotides. 
+Each nucleotide is adenine, cytosine, guanine, or thymine. 
+These are abbreviated as A, C, G, and T. 
+A nucleotide is also called a nucleotide base, nitrogenous base, nucleobase, or just a base.
+
+- GC-content
+Biologists have multiple reasons to be interested in GC content:
+
+GC content can identify genes within the DNA, and can identify types of genes. Genes tend to have higher GC content than other parts of the DNA. Genes with longer coding regions have even higher GC content.
+Regions of DNA with higher GC content require higher temperatures for certain chemical reactions, such as when copying/duplicating the DNA.
+GC content can be used in determining classification of species.
+If you are curious, Wikipedia has more information about GC content. That reading is optional and is not required to complete this assignment.
+
+Your program will read data files produced by a high-throughput sequencer — a machine that takes as input some DNA, and produces as output a file containing a sequence of nucleotides.
+
+Here are the first 8 lines of output from a particular sequencer:
+
+@SOLEXA-1GA-2_2_FC30DNN:1:2:574:1722
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
++SOLEXA-1GA-2_2_FC30DNN:1:2:574:1722
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+@SOLEXA-1GA-2_2_FC30DNN:1:2:478:1745
+GTGGGGGTGATGTCCACGATTACGCCGACCGGCTGG
++SOLEXA-1GA-2_2_FC30DNN:1:2:478:1745
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+The nucleotide data is in the second line, the sixth line, the tenth line, etc. 
+Your program will not use the rest of the file, which provides information about the sequencer and the sequencing process that created the nucleotide data.
+
+
+
+*Note: (change) the title for this folder should be HW2 DNA Analysis and not Data Analysis
