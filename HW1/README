@@ -1,0 +1,11 @@
+This folder contains the problem statements, my answers and the empty code and text files provided in the Week 1 Homework of CSE160.
+
+This week's homework is 'Welcome to Python' and is composed of programming exercises.
+
+# Learning Objectives:
+
+- write Python code using variables and loops to solve simple mathematical problems
+- become familiar with the an IDE and running Python programs
+- gain practice printing results to match a specification exactly
+
+*Note: I personally use Atom as IDE rather than Canopy (as suggested in the homework assignments)
