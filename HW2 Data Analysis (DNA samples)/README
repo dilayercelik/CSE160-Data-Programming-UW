@@ -2,14 +2,14 @@ This folder contains the problem statements, my answers and the empty code and t
 
 This week's homework is on DNA Analysis.
 
-> Learning Objectives:
+# Learning Objectives:
 
 gain experience writing Python code using loops, conditionals (if statements), functions and string manipulation
 become familiar with running Python programs from the command line and using command line parameters to locate data files
 write Python code to analyze DNA data sets
 
 
-> Background
+# Background
 
 You will use, modify, and extend a program to compute the GC content of DNA data. 
 The GC content of DNA is the percentage of nucleotides that are either G or C.
